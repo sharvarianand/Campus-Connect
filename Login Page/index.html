@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect: Bridging Minds and Opportunities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Campus Connect</h1>
+        <p>Bridging Minds and Opportunities</p>
+    </header>
+
+    <section id="login-container">
+        <div class="login-text">
+            <h2>Welcome to Campus Connect</h2>
+            <p>Your gateway to connect, collaborate, and grow. Join a network of like-minded individuals and unlock opportunities in mentorship, career development, and beyond.</p>
+        </div>
+        
+        <!-- Login Form -->
+        <div id="login-box" class="form-box">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+                
+                <label>
+                    <input type="checkbox" name="remember"> Remember Me
+                </label>
+                
+                <button type="submit" class="cta-button">Login</button>
+            </form>
+            <p class="switch-form-text">Don't have an account? <a href="#" onclick="switchToSignUp()">Sign Up</a></p>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div id="signup-box" class="form-box" style="display: none;">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="email" required placeholder="Enter your email">
+                
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="password" required placeholder="Create a password">
+                
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+                
+                <button type="submit" class="cta-button">Sign Up</button>
+            </form>
+            <p class="switch-form-text">Already have an account? <a href="#" onclick="switchToLogin()">Login</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Campus Connect: Bridging Minds and Opportunities | All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
